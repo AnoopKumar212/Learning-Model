@@ -1,4 +1,4 @@
 <?php 
-$output=`git pull`;
-echo"$output 2>&1";
+$output=`git pull 2>&1`;
+echo"$output";
 ?>
