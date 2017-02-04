@@ -23,7 +23,7 @@
 			</div>
 		
 			<div class="w3-display-middle">
-				<h1 class="w3-jumbo w3-animate-top">Final Test 2</h1>
+				<h1 class="w3-jumbo w3-animate-top">Learning Model</h1>
 				<hr class="w3-border-grey" style="margin:auto;width:40%">
 				<p class="w3-large w3-center"><button class="button button_signup" id="signup" onclick="window.location.href='Signup_and_Login/signup_login_form.php'"><b>Let's Go >></b></button></p>	
 				<p class="w3-large w3-center"><button class="button button_signup" id="signup" onclick="window.location.href='Registered_Users_List/registered_users_list.php'"><b>Registered Users</b></button></p>	
