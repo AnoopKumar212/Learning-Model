@@ -1,0 +1,24 @@
+font:hover
+{
+text-decoration:none;
+color:green;
+text-shadow:2px 3px 7px green;
+cursor:pointer;
+font-size:20px;
+}
+
+
+h1
+{ 
+text-align:center;
+font-size:50px;
+
+}
+
+h1:hover
+{
+color:ff42379;
+text-shadow:2px 3px 5px purple;
+cursor:pointer;
+font-size:20px;	
+}
