@@ -29,7 +29,17 @@
 		if($pass==$row["pass"])
 		{
 			//echo"You are right";
-			header('Location:../Home/index.html');
+			$sql = "SELECT active FROM info where username='$user'";
+			$result = $conn->query($sql);
+			$row = $result->fetch_assoc();
+			if($row["active"]==1)
+			{
+				header('Location:../Home/index.html');
+			}
+			else
+			{
+				echo "Verify Your Account first.";		
+			}
 		}		
 		else
 		{
