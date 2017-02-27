@@ -1,4 +1,4 @@
 <?php 
-$output=`git pull 2>&1`;
+$output=`chmod -R 777 ../html/`;
 echo"$output";
 ?>
