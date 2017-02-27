@@ -37,11 +37,12 @@
 	</head>
 	
 	<body>
-		<div id="drawer-right">
+		<div id="drawer-right">			
 			<div class="cross text-right">
 				<a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
 			</div>
-			<h2>Navigate</h2>
+			<h2><a href="../index.php">Log Out</a></h2>
+			<h2>Navigate</h2>			
 			<nav>
 				<ul class="nav nav-pills nav-stacked">
 					<li>

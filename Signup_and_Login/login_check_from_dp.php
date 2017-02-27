@@ -32,9 +32,10 @@
 			$sql = "SELECT active FROM info where username='$user'";
 			$result = $conn->query($sql);
 			$row = $result->fetch_assoc();
+			//echo $row["active"];
 			if($row["active"]==1)
-			{
-				header('Location:../Home/index.html');
+			{				
+				header('Location:../Home/index.php');
 			}
 			else
 			{
