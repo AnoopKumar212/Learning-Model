@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Let's Go</title>  
+  <title>Learning Model</title>  
       <link rel="stylesheet" href="Assets/Style/go.css">
 	  <script src="Assets/Script/Validate.js"></script>	  	  
 </head>
