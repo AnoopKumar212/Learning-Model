@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Register Yourself Here</title>  
+  <title>Register Here</title>  
       <link rel="stylesheet" href="Assets/Style/go.css">
 	  <script src="Assets/Script/Validate.js"></script>	  	  
 </head>
