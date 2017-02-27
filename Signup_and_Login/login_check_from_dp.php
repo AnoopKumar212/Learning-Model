@@ -1,24 +1,44 @@
-<?php 
-  $user=$_POST["uname"];
-  $pass=$_POST["pass"];
-  mysql_connect("localhost","root","Cyborg@champ45");
-  mysql_select_db("learning");
-  if($user=="admin" and $pass=="root")
-  {
-	  header("location:../Administrator/administrative.php");
+ <?php	
+	$servername = "localhost";
+	$username = "root";
+	$password = "Cyborg@champ45";
+	$dbname = "Learning";
+
+	// Fetching Data from the URL with POST method
+	$user=$_POST['uname'];
+	$pass=$_POST['pass'];
+	
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	
+	// Check connection
+	if ($conn->connect_error) 
+	{
+		die("Connection failed: " . $conn->connect_error);
 	}
-	  else
-	  {		  
-		  $check=mysql_query("select * from login where username='$user' AND pass='$pass'");
-		  $count = mysql_num_rows($check);
-		  if ($count==1)
-		  {
-			  header("location:../Profile_Update_Form/profile_update.php");
-			 }
-			 else
-			 {
-			 echo "<br>Error: " . $sql . "<br>" . mysqli_error($db);
-			 }
-	}			
-			 	
-	  ?>
+	//echo "Connected successfully";
+	//echo "<br/>$user<br/>$pass";
+	/*After Connection Code*/
+	$sql = "SELECT pass FROM login where username='$user'";
+	$result = $conn->query($sql);	
+	if ($result->num_rows == 1) 
+	{
+		// output data of row
+		$row = $result->fetch_assoc();
+		//echo "<br/>password: " . $row["pass"]. "<br>";
+		if($pass==$row["pass"])
+		{
+			//echo"You are right";
+			header('Location:../Home/index.html');
+		}		
+		else
+		{
+			//echo"You are wrong";		
+		}	
+	}
+	else
+	{
+		echo "<br/>0 results";
+	}
+	$conn->close();
+?> 

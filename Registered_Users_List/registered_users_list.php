@@ -5,7 +5,7 @@
 	$dbname = "myDB";
 
 	// Create connection
-	$conn = new mysqli('localhost','root','Cyborg@champ45','learning');
+	$conn = new mysqli('localhost','root','Cyborg@champ45','Learning');
 	// Check connection
 	if ($conn->connect_error)
 	{
