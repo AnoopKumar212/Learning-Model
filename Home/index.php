@@ -41,7 +41,7 @@
 			<div class="cross text-right">
 				<a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
 			</div>
-			<h2><a href="../index.php">Log Out</a></h2>
+			<h2><a href="logout.php">Log Out</a></h2>
 			<h2>Navigate</h2>			
 			<nav>
 				<ul class="nav nav-pills nav-stacked">
@@ -85,7 +85,18 @@
 				<div class="header-wrapper-inner">
 					<section class="top clearfix">
 						<div class="pull-left">
-							<h1><a class="logo" href="index.html">Welcome NAME</a></h1>
+							<h1 style="color:white;">
+								<?php session_start();
+								if(isset($_SESSION["username"])) 
+								{
+								    $word = $_SESSION["username"];
+								    echo($word);
+								} 
+								else 
+								{
+									header('Location:../index.php');
+								}
+								?></h1>
 						</div>
 						<div class="pull-right">
 							<a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>

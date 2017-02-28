@@ -1,3 +1,11 @@
+<?php session_start();
+if(isset($_SESSION["username"])) 
+{
+}
+else
+{
+header('Location:../index.php');
+}?>
 <?php
 $a1=@$_GET[t1];
 $a2=@$_GET[t2];

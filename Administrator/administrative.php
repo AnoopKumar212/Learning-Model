@@ -1,3 +1,11 @@
+<?php session_start();
+if(isset($_SESSION["username"])) 
+{
+}
+else
+{
+header('Location:../index.php');
+}?>
 <html>
   <head>
 	<title>Administrative's page</title>

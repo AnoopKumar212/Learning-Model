@@ -34,7 +34,9 @@
 			$row = $result->fetch_assoc();
 			//echo $row["active"];
 			if($row["active"]==1)
-			{				
+			{	
+				session_start();
+				$_SESSION["username"] = "$user";		
 				header('Location:../Home/index.php');
 			}
 			else
