@@ -1,6 +1,6 @@
 <?php 
 $output=`git pull 2>&1`;
 echo"$output";
-$out=`./folpermit.sh`;
+$out=`./permission.sh`;
 echo="$out";
 ?>
