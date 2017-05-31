@@ -41,7 +41,7 @@
 	------------------------
 		 
 	Please click this link or copy this link to your browser to activate your account:
-	http://pranavgupta.dynu.com/Mail_Service/validate.php?email='.$email.'&hash='.$hash;
+	https://learning-model.tk/Mail_Service/validate.php?email='.$email.'&hash='.$hash;
 	mail($to, $subject, $message, $headers);
 	?>
 		<div style="margin-bottom: 15px;padding: 4px 12px;background-color: #e7f3fe;border-left: 6px solid #2196F3;">
