@@ -6,20 +6,20 @@
 <html class="noIE" lang="en-US">
 <!--<![endif]-->
 	<head>
-		<title>Learning Model</title>
+		<title>Learning-Model</title>
 
 		<!-- meta -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
-		
+
 		<!-- google fonts -->
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans'>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold"/>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+Sans:regular,italic,bold,bolditalic"/>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nixie+One:regular,italic,bold,bolditalic"/>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+SC:regular,italic,bold,bolditalic"/>
-		
+
 		<!-- css -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -35,14 +35,14 @@
 	    	<script src="assets/js/selectivizr.js"></script>
 	    <![endif]-->
 	</head>
-	
+
 	<body>
-		<div id="drawer-right">			
+		<div id="drawer-right">
 			<div class="cross text-right">
 				<a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
 			</div>
 			<h2><a href="logout.php">Log Out</a></h2>
-			<h2>Navigate</h2>			
+			<h2>Navigate</h2>
 			<nav>
 				<ul class="nav nav-pills nav-stacked">
 					<li>
@@ -80,19 +80,19 @@
 		</div><!-- #drawer-right -->
 
 		<div id="wrapper">
-			
+
 			<div id="header" class="content-block header-wrapper">
 				<div class="header-wrapper-inner">
 					<section class="top clearfix">
 						<div class="pull-left">
 							<h1 style="color:white;">
 								<?php session_start();
-								if(isset($_SESSION["username"])) 
+								if(isset($_SESSION["username"]))
 								{
 								    $word = $_SESSION["username"];
 								    echo($word);
-								} 
-								else 
+								}
+								else
 								{
 									header('Location:../index.php');
 								}
@@ -104,7 +104,7 @@
 					</section>
 					<section class="center">
 						<div class="slogan">
-							Learning Model
+							Learning-Model
 						</div>
 						<div class="secondary-slogan">
 							Diving into the ocean of knowledge
@@ -118,7 +118,7 @@
 				</div>
 			</div><!-- header -->
 
-			
+
 			<div class="content-block" id="portfolio">
 				<div class="container">
 					<header class="block-heading cleafix">
@@ -311,7 +311,7 @@
 			<div class="content-block" id="footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-6">&copy; Copyright Learning Model</div>						
+						<div class="col-xs-6">&copy; Copyright Learning Model</div>
 					</div>
 				</div>
 			</div><!-- #footer -->
