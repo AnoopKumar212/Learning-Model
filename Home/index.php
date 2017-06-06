@@ -139,7 +139,7 @@
 								</a>
 							</div>
 							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/flat_icons_thumb.jpg)">
+								<a href="./Games/2048/index.html" class="recent-work" style="background-image:url(assets/images/flat_icons_thumb.jpg)">
 									<span class="btn btn-o-white">GAME 2048</span>
 								</a>
 							</div>
